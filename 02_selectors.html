@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Element selectors*/
+        body{
+            background-color: #a8a1a1;
+        }
+        /* . is for classes*/
+        .primary-heading{
+            color:blue;
+        }
+
+        /* # is for IDs */
+        #welcome{
+            background-color: #f7f0f0;
+        }
+
+        /*multiple selectors*/
+        #welcome, #about{
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        /*nested selectors*/
+        #welcome p{
+            font: size 20px;
+        }
+        #about{
+            color:white;
+        }
+
+        /*
+
+        ---child specific elements
+        h2 > span  <--- all of span of parent h2
+
+        ---directly after another element
+        #welcome + span <--- select any span after #welcome
+
+        ---attributes
+        [href]
+        li[title="chickens"]
+        [title*="chic"] <--- fuzzy find
+
+        ---pseudo
+        height: 1px .hover;
+        div:last-child
+
+        */
+
+
+    </style>
+</head>
+<body>
+    <div id ="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quod maiores quam aliquam, nesciunt sit minima quas architecto cum, asperiores tenetur vel voluptatem suscipit neque! Rerum suscipit consequuntur illum sed!
+        </p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequuntur perferendis itaque aspernatur atque, at voluptatibus repellendus debitis. Porro dolorum incidunt ullam rem ea quaerat corrupti accusamus vero! Dolor, minima!
+        </p>
+
+    </div>
+    
+</body>
+</html>
